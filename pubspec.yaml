@@ -8,9 +8,9 @@ environment:
 
 dependencies:
   serverpod_client: ^2.9.2
-  package_info_plus: ^4.1.0
+  package_info_plus: ^9.0.0
 
 dev_dependencies:
-  lints: ^3.0.0
+  lints: ^6.0.0
   flutter_lints: any
   test: ^1.25.0
