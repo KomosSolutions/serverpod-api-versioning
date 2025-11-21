@@ -1,7 +1,7 @@
 ///
 /// Checks if the client version is compatible with the server.
 ///
-class ServerpodAPIVersioning {
+class ServerpodEndpointVersioning {
     static List<int> _parse(String v) =>
         v.split('.').map((e) => int.parse(e)).toList();
 

@@ -1,6 +1,6 @@
-# Serverpod API Versioning
+# Serverpod Endpoint Versioning
 
-A lightweight, reusable package for client/server API version compatibility checking in Serverpod projects.
+A lightweight, reusable package for client/server endpoint version compatibility checking in Serverpod projects.
 
 ## Features
 
@@ -15,13 +15,13 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  serverpod_api_versioning: ^1.0.0
+  serverpod_endpoint_versioning: ^1.0.0
 ```
 
 ## Usage
 
 ``` dart
-import 'package:serverpod_api_versioning/serverpod_api_versioning.dart';
+import 'package:serverpod_endpoint_versioning/serverpod_endpoint_versioning.dart';
 
 final result = await VersionChecker.check(
   clientVersion: "1.0.0",

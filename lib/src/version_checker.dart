@@ -1,5 +1,5 @@
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:serverpod_api_versioning/serverpod_api_versioning.dart';
+import 'package:serverpod_endpoint_versioning/serverpod_endpoint_versioning.dart';
 
 ///
 /// Version check result.
@@ -16,6 +16,7 @@ class VersionCheckResult {
 
 class VersionChecker {
 
+    ///
     final Future<Map<String, dynamic>> Function() getServerInfo;
 
     VersionChecker({required this.getServerInfo});
@@ -31,7 +32,7 @@ class VersionChecker {
         final info = await getServerInfo();
         final minVersion = info['minClientVersion'] as String;
 
-        final ok = ServerpodAPIVersioning.isCompatible(clientVersion, minVersion);
+        final ok = ServerpodEndpointVersioning.isCompatible(clientVersion, minVersion);
 
         return VersionCheckResult(compatible: ok, info: info);
     }

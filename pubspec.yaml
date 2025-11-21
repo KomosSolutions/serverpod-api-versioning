@@ -1,7 +1,7 @@
-name: serverpod_api_versioning
-description: API version compatibility helper for Serverpod & Flutter clients.
+name: serverpod_endpoint_versioning
+description: A Serverpod utility for managing client-server compatibility. It integrates a client-side mechanism to ensure the client's version is compatible with the server.
 version: 1.0.0
-homepage: https://github.com/komossolutions/serverpod_api_versioning
+homepage: https://github.com/komossolutions/serverpod_endpoint_versioning
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
